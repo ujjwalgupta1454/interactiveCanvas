@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+}
+
+#container {
+    width: 800px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#canvas-container {
+    position: relative;
+    border: 2px solid #ccc;
+    height: 400px;
+    background-color: #eeeeee;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+/* Undo/Redo Toolbar */
+#toolbar-top {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+#toolbar-top button {
+    background: none;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: #333;
+}
+
+#toolbar-top button span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Toolbar Below Canvas */
+#toolbar-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+#font-size-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#fontSizeDisplay {
+    width: 30px;
+    text-align: center;
+}
+
+/* Font Alignment Button */
+#fontAlignBtn {
+    border: none;
+    background: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+}
+
+/* Dropdown for Align Options */
+.align-options {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    z-index: 1;
+}
+
+.align-options button {
+    border: none;
+    background: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.align-options button:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* Add Text Button */
+#addTextBtn {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 15px;
+    cursor: pointer;
+}
